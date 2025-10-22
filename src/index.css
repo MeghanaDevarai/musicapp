@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You might need to adjust font imports for React */
+/* For example, if using Google Fonts, link in public/index.html */
+/* Or use a package like @fontsource */
+
+/* Example for 'Pacifico' font if not using next/font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Inter", sans-serif; /* Assuming Inter is still desired, link it in index.html */
+}
+
+/* Light mode styles (if you want to support it) */
+.light-mode {
+  /* Define light mode specific styles here */
+  --bg-gradient-from: #e0e7ff;
+  --bg-gradient-via: #c7d2fe;
+  --bg-gradient-to: #a78bfa;
+  --text-color: #1f2937;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --button-text: #ffffff;
+  --button-bg-from: #8b5cf6;
+  --button-bg-to: #3b82f6;
+  /* Add more variables as needed */
+}
+
+/* Apply light mode variables */
+.light-mode .min-h-screen {
+  background: linear-gradient(
+    to bottom right,
+    var(--bg-gradient-from),
+    var(--bg-gradient-via),
+    var(--bg-gradient-to)
+  );
+}
+
+.light-mode .text-white {
+  color: var(--text-color);
+}
+
+.light-mode .text-blue-200 {
+  color: #4f46e5; /* Example light mode color */
+}
+
+.light-mode .bg-white\/10 {
+  background-color: var(--card-bg);
+}
+
+.light-mode .border-white\/20 {
+  border-color: var(--card-border);
+}
+
+.light-mode .text-white\/80 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.light-mode .text-white\/60 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.light-mode .bg-black\/20 {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.light-mode .bg-white {
+  background-color: #f3f4f6;
+}
+
+.light-mode .text-purple-900 {
+  color: #6d28d9;
+}
+
+.light-mode .hover\:text-purple-200:hover {
+  color: #a78bfa;
+}
+
+.light-mode .placeholder-white\/60::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.light-mode .text-red-400 {
+  color: #ef4444;
+}
+
+.light-mode .bg-gradient-to-r.from-purple-500.to-blue-600 {
+  background-image: linear-gradient(
+    to right,
+    var(--button-bg-from),
+    var(--button-bg-to)
+  );
+}
+
+.light-mode .hover\:from-purple-600:hover {
+  --tw-gradient-from: #7c3aed;
+}
+
+.light-mode .hover\:to-blue-700:hover {
+  --tw-gradient-to: #2563eb;
+}
+
+.light-mode .bg-gray-900 {
+  background-color: #f9fafb;
+}
+
+.light-mode .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .hover\:bg-white\/10:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.light-mode .text-blue-300 {
+  color: #60a5fa;
+}
+
+.light-mode .hover\:text-blue-200:hover {
+  color: #93c5fd;
+}
+
+.light-mode .bg-green-600 {
+  background-color: #10b981;
+}
+
+.light-mode .hover\:bg-green-700:hover {
+  background-color: #059669;
+}
+
+.light-mode .bg-gradient-to-r.from-purple-600\/20.to-blue-600\/20 {
+  background-image: linear-gradient(
+    to right,
+    rgba(139, 92, 246, 0.1),
+    rgba(59, 130, 246, 0.1)
+  );
+}
+
+.light-mode .bg-gradient-to-r.from-purple-600.to-blue-600 {
+  background-image: linear-gradient(to right, #8b5cf6, #3b82f6);
+}
+
+.light-mode .hover\:from-purple-700:hover {
+  --tw-gradient-from: #7c3aed;
+}
+
+.light-mode .hover\:to-blue-700:hover {
+  --tw-gradient-to: #2563eb;
+}
+
+.light-mode .text-purple-400 {
+  color: #a78bfa;
+}
+
+.light-mode .text-blue-400 {
+  color: #60a5fa;
+}
+
+.light-mode .text-green-400 {
+  color: #34d399;
+}
+
+.light-mode .bg-green-500 {
+  background-color: #10b981;
+}
+
+.light-mode .bg-purple-500 {
+  background-color: #8b5cf6;
+}
+
+.light-mode .bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.light-mode .bg-green-500\/20 {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.light-mode .bg-purple-500\/20 {
+  background-color: rgba(139, 92, 246, 0.2);
+}
+
+.light-mode .bg-blue-500\/20 {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.light-mode .text-purple-300 {
+  color: #c4b5fd;
+}
+
+.light-mode .bg-purple-500\/20 {
+  background-color: rgba(139, 92, 246, 0.2);
+}
